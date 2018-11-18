@@ -1,0 +1,22 @@
+---
+title: ""
+layout: archive
+type: pages
+excerpt: 
+header:
+  overlay_image: header.png
+  
+sitemap: false
+author_profile: false
+permalink: /
+---
+
+{% include base_path %}
+
+<h3 class="archive__subtitle">Recent Works</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
